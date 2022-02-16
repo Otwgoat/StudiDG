@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/build.css">
+    <link rel="stylesheet" href="./dist/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div class="flex basis-1/2  min-h-full  flex-col  items-center justify-between " style="background-color: #f7f7f7;">
         <div id="player1" class="flex items-end ">
             <h1  id="p1" class="text-4xl mt-40" style="font-family: 'Lato', sans-serif;">PLAYER 1</h1>
-            <span id="p1Point" class="bg-red-600 w-4 h-4 inline-block rounded-full ml-6  mb-2"></span>
+            <span id="p1Point" class="bg-red-600  w-4 h-4 inline-block rounded-full ml-6  mb-2"></span>
         </div>
         <div id="scoringP1GlobalDisplay" >
             <span id="GlobalScoreP1" class="text-8xl text-red-600" style="font-family: 'Lato' , sans-serif;">00</span>
@@ -53,7 +53,7 @@
 
     <div id="commandContainer" class="absolute w-1/4 h-4/5  flex flex-col items-center justify-between" style="left: 37vw; top:12vh">
         <div id="commandTop" >
-            <div id="startNewGame" class="flex cursor-pointer">
+            <div id="startNewGame" class="flex cursor-pointer" style="user-select: none;">
                 <i class="fa-solid fa-circle-plus self-center text-red-600"></i>
                 <h2 class="text-slate-700 ml-1">NEW GAME</h2>
             </div>
@@ -65,11 +65,11 @@
         </div>
         <!---------------------------------------------------------------------------------------------->
         <div id="commandBottom"  class="flex flex-col items-center justify-between mb-28">
-            <div id="rollDice" class="flex cursor-pointer">
+            <div id="rollDice" class="flex cursor-pointer" style="user-select: none;">
                 <i class="fa-solid fa-arrows-rotate self-center text-red-600"></i>
                 <h2 class="text-slate-700 ml-1">ROLL DICE</h2>
             </div>
-            <div id="hold" class="flex cursor-pointer mt-10">
+            <div id="hold" class="flex cursor-pointer  mt-10" style="user-select: none;">
                 <i class="fa-solid fa-arrow-up-from-bracket self-center text-red-600"></i>
                 <h2 class="text-slate-700 ml-1">HOLD</h2>
             </div>
