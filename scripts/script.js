@@ -39,6 +39,7 @@ function startGame() {
   globalP2.textContent = player2.globalScore;
   currentP1.textContent = player1.currentScore;
   currentP2.textContent = player2.currentScore;
+  whoPlays();
 }
 
 window.addEventListener("load", startGame);
